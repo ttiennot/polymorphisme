@@ -5,6 +5,9 @@
 #include <QLabel>
 #include <QStringListModel>
 
+#include <QWidget>
+#include <QListWidget>
+
 class EtudiantForm : 
     public Form
 {
@@ -17,7 +20,6 @@ public:
 
 private slots:
     void onDataChanged(const QModelIndex& topLeft, const QModelIndex& bottomRight, const QVector<int>& roles);
-
 private:
     QTableView* matiereNoteTableView;
     QComboBox* classeComboBox;

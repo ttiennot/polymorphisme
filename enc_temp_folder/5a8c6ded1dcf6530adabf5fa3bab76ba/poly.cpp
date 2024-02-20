@@ -81,7 +81,7 @@ else {
 	qDebug() << "La table des matières est introuvable dans le widget.";
 }
 
-QString classe = classeComboBox->currentText(); // Récupérer la classe sélectionnée (utiliser valeur bidon si j'arrive pas à réparer)
+QString classe = classeComboBox->currentText(); // Récupérer la classe sélectionnée
 
 if (ui.EtudiantRadioBtn->isChecked()) {
 	insertDatabase(prenom, nom, adresseComplete, age.toInt(), tel, email, "etudiant", matieres, classe);
