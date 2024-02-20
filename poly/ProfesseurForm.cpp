@@ -2,33 +2,38 @@
 
 void ProfesseurForm::generateForm(QWidget* parent, QLayout* container)
 {
-	Form::generateForm(parent, container);
+    Form::generateForm(parent, container);
 
-	QLayout* topLayout = new QHBoxLayout();
-	addAllocatedObject(topLayout);
-	QLayout* bottomLayout = new QHBoxLayout();
-	addAllocatedObject(bottomLayout);
+    QLayout* topLayout = new QHBoxLayout();
+    addAllocatedObject(topLayout);
+    QLayout* bottomLayout = new QHBoxLayout();
+    addAllocatedObject(bottomLayout);
 
-	container->addItem(topLayout);
-	container->addItem(bottomLayout);
+    container->addItem(topLayout);
+    container->addItem(bottomLayout);
 
-	QLabel* labelMatiere = new QLabel("Liste des matières suivies : ");
-	topLayout->addWidget(labelMatiere);
-	addAllocatedObject(labelMatiere);
+    QLabel* labelMatiere = new QLabel("Liste des matières suivies : ");
+    topLayout->addWidget(labelMatiere);
+    addAllocatedObject(labelMatiere);
 
-	matiereNoteTableView = new QTableView();
-	topLayout->addWidget(matiereNoteTableView);
-	addAllocatedObject(matiereNoteTableView);
+    matiereHeuresTableView = new QTableView();
+    topLayout->addWidget(matiereHeuresTableView);
+    addAllocatedObject(matiereHeuresTableView);
 
-	classeComboBox = new QComboBox();
-	bottomLayout->addWidget(classeComboBox);
-	addAllocatedObject(classeComboBox);
+    classeComboBox = new QComboBox();
+    bottomLayout->addWidget(classeComboBox);
+    addAllocatedObject(classeComboBox);
 
-	labelMatiere->setParent(parent);
-	matiereNoteTableView->setParent(parent);
-	classeComboBox->setParent(parent);
+    labelMatiere->setText("Nombre d'heures enseignées : ");
 
-	labelMatiere->show();
-	matiereNoteTableView->show();
-	classeComboBox->show();
+    // Utilisation de setEditText pour définir un texte d'invite
+    classeComboBox->setEditText("Sélectionner le tarif horaire");
+
+    labelMatiere->setParent(parent);
+    matiereHeuresTableView->setParent(parent);
+    classeComboBox->setParent(parent);
+
+    labelMatiere->show();
+    matiereHeuresTableView->show();
+    classeComboBox->show();
 }

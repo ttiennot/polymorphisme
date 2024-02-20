@@ -1,4 +1,7 @@
 #include "EtudiantForm.h"
+#include <qlineedit.h>
+#include <QLineEdit>
+#include <qlayout.h> 
 
 void EtudiantForm::generateForm(QWidget* parent, QLayout* container)
 {

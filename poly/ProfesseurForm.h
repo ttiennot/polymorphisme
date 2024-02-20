@@ -10,7 +10,7 @@ class ProfesseurForm :
     Q_OBJECT
 
     QComboBox* classeComboBox;
-    QTableView* matiereNoteTableView;
+    QTableView* matiereHeuresTableView;
 public:
     virtual void generateForm(QWidget* parent, QLayout* container);
 };

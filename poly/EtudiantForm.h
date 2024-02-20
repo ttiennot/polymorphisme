@@ -11,6 +11,8 @@ class EtudiantForm :
 
     QComboBox* classeComboBox;
     QTableView* matiereNoteTableView;
+   // QLineEdit* matiereLineEdit;
+    //QLayout* topLayout;
 public : 
     virtual void generateForm(QWidget* parent, QLayout* container);
 };
