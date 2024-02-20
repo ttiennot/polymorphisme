@@ -59,7 +59,7 @@
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QLineEdit" name="FirstNameEdit"/>
+           <widget class="QLineEdit" name="nomEdit"/>
           </item>
           <item row="1" column="0">
            <widget class="QLabel" name="label_5">
@@ -69,7 +69,7 @@
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QLineEdit" name="NameEdit"/>
+           <widget class="QLineEdit" name="prenomEdit"/>
           </item>
           <item row="2" column="0">
            <widget class="QLabel" name="label_4">
@@ -79,13 +79,13 @@
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QLineEdit" name="AdressLineEdit1"/>
+           <widget class="QLineEdit" name="adressLineEdit1"/>
           </item>
           <item row="3" column="1">
-           <widget class="QLineEdit" name="AdressLineEdit2"/>
+           <widget class="QLineEdit" name="adressLineEdit2"/>
           </item>
           <item row="4" column="1">
-           <widget class="QLineEdit" name="AdressLineEdit3"/>
+           <widget class="QLineEdit" name="adressLineEdit3"/>
           </item>
           <item row="5" column="0">
            <widget class="QLabel" name="label_12">
@@ -124,7 +124,7 @@
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QLineEdit" name="AgeEdit"/>
+           <widget class="QLineEdit" name="ageEdit"/>
           </item>
           <item row="1" column="0">
            <widget class="QLabel" name="label_6">
@@ -134,7 +134,7 @@
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QLineEdit" name="TelephoneEdit"/>
+           <widget class="QLineEdit" name="telEdit"/>
           </item>
           <item row="2" column="0">
            <widget class="QLabel" name="label_7">
@@ -144,7 +144,7 @@
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QLineEdit" name="EmailEdit"/>
+           <widget class="QLineEdit" name="emailEdit"/>
           </item>
          </layout>
         </item>
@@ -167,7 +167,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="okBtn">
         <property name="text">
          <string>OK</string>
         </property>

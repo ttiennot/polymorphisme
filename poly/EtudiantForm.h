@@ -1,19 +1,25 @@
 #pragma once
 #include "Form.h"
-#include <qcombobox.h>
-#include <qtableview.h>
-#include <qlabel.h>
+#include <QComboBox>
+#include <QTableView>
+#include <QLabel>
+#include <QStringListModel>
 
-class EtudiantForm :
+class EtudiantForm : 
     public Form
 {
     Q_OBJECT
 
-    QComboBox* classeComboBox;
-    QTableView* matiereNoteTableView;
-   // QLineEdit* matiereLineEdit;
-    //QLayout* topLayout;
-public : 
-    virtual void generateForm(QWidget* parent, QLayout* container);
-};
+public:
+    EtudiantForm(QWidget* parent = nullptr); // Constructeur
+    virtual ~EtudiantForm(); // Destructeur
+    virtual void generateForm(QWidget* parent, QLayout* container) override;
 
+private slots:
+    void onDataChanged(const QModelIndex& topLeft, const QModelIndex& bottomRight, const QVector<int>& roles);
+
+private:
+    QTableView* matiereNoteTableView;
+    QComboBox* classeComboBox;
+    QStringListModel* matiereListModel;
+};
